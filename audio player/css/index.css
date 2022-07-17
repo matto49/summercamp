@@ -1,0 +1,157 @@
+body {
+  background-color: rgba(240, 240, 240, 0.6);
+}
+
+.header {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.header img {
+  height: 24px;
+  width: 24px;
+}
+.header .container {
+  display: flex;
+  margin-right: 20px;
+}
+.header .container .search-bar {
+  padding-left: 10px;
+  background-color: #eaeaea;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+}
+.header .container .search-bar input {
+  border: 0px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.header .container .search-bar input::placeholder {
+  color: #c7c9ce;
+}
+.header .container .buttons img {
+  margin-left: 25px;
+}
+
+.main {
+  display: flex;
+  margin: 60px 150px 0 150px;
+}
+.main .left .cover {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  border: 16px solid #e9e9eb;
+  animation: rotation 60s infinite linear both;
+  animation-play-state: paused;
+}
+.main .left .cover img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  border: 45px solid black;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.main .left .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.main .left .buttons .button {
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .left .buttons .button img {
+  height: 30px;
+  width: 30px;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+}
+.bottom .process-bar .rdy {
+  background-color: white;
+  height: 2px;
+}
+.bottom .process-bar .cur {
+  background-color: #fb0d0d;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bottom .process-bar .cur .process-btn {
+  background-image: url(../static/circle.svg);
+  background-size: cover;
+  position: absolute;
+  top: -9px;
+  right: -13px;
+  width: 22px;
+  height: 22px;
+  margin-left: -11px;
+}
+.bottom .content {
+  display: flex;
+  align-items: center;
+  width: calc(100vw - 30px);
+  justify-content: space-between;
+  background-color: #fcfcfc;
+  padding: 15px 15px 15px 15px;
+}
+.bottom .content img {
+  height: 24px;
+  width: 24px;
+}
+.bottom .content .left {
+  display: flex;
+  align-items: center;
+  width: 25vw;
+}
+.bottom .content .left .cover {
+  height: 50px;
+  width: 50px;
+  border-radius: 7px;
+}
+.bottom .content .left .messages {
+  margin-left: 10px;
+}
+.bottom .content .left .messages .song-detail .singer {
+  color: #8f939c;
+}
+.bottom .content .left .messages .time {
+  margin-top: 5px;
+  color: #8f939c;
+}
+.bottom .content .middle {
+  display: flex;
+}
+.bottom .content .middle img {
+  margin-left: 30px;
+}
+.bottom .content .right {
+  display: flex;
+  width: 25vw;
+  justify-content: end;
+  padding-right: 30px;
+}
+.bottom .content .right img {
+  margin-left: 30px;
+}
+
+.player {
+  display: none;
+}/*# sourceMappingURL=index.css.map */

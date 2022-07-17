@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head lang="zh">
+  <meta charset="utf-8" />
+  <title>仿网易云的简单播放器</title>
+  <meta name="author" content="matto" />
+  <meta content="仿网易云的简单播放器" />
+  <link href="./css/index.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="search-bar">
+        <img src="./static/search.svg" alt="search" class="button" />
+        <input type="text" placeholder="输入想搜索的音乐" />
+      </div>
+      <div class="buttons">
+        <img src="./static/setting.svg" alt="setting" class="button" />
+        <img src="./static/email.svg" alt="email" class="button" />
+        <img src="./static/skin.svg" alt="skin" class="button" />
+        <img src="./static/minimize.svg" alt="minimize" class="button" />
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="left">
+      <div class="cover">
+        <img src="https://p1.music.126.net/MaSfIV1fhAMCfYn6JwgajA==/109951163352090382.jpg" alt="cover" />
+      </div>
+      <div class="buttons">
+        <div class="button"><img src="./static/like.svg" alt="like" /></div>
+        <div class="button"><img src="./static/add.svg" alt="add" /></div>
+        <div class="button"><img src="./static/download.svg" alt="download" /></div>
+        <div class="button download"><img src="./static/share.svg" alt="share" /></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="lyric"></div>
+    </div>
+  </main>
+  <div class="bottom">
+    <div class="process-bar">
+      <div class="rdy"></div>
+      <div class="cur">
+        <span class="process-btn c-btn"></span>
+      </div>
+    </div>
+    <div class="content">
+      <div class="left">
+        <img src="https://p1.music.126.net/MaSfIV1fhAMCfYn6JwgajA==/109951163352090382.jpg" alt="cover" class="cover" />
+        <div class="messages">
+          <div class="song-detail">
+            <span class="title">ワンダーラスト</span>
+            <span class="singer">sasakura.UK</span>
+          </div>
+          <div class="time">00:13/02:15</div>
+        </div>
+      </div>
+      <div class="middle">
+        <img src="./static/like.svg" alt="like" />
+        <img src="./static/previous.svg" alt="previous" />
+        <div><img src="./static/play.svg" alt="play" class="play" /></div>
+        <img src="./static/next.svg" alt="next" />
+        <img src="./static/share.svg" alt="share" />
+      </div>
+      <div class="right">
+        <img src="./static/loop.svg" alt="loop" />
+        <img src="./static/play-list.svg" alt="play-list" />
+        <img src="./static/volume.svg" alt="volume" />
+      </div>
+    </div>
+  </div>
+  <audio class="player" src="https://music.163.com/song/media/outer/url?id=22813154.mp3" autoplay controls="controls"></audio>
+  <script src="./index.js"></script>
+</body>
