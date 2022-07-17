@@ -36,7 +36,8 @@ body {
 
 .main {
   display: flex;
-  margin: 60px 150px 0 150px;
+  margin: 60px 50px 0 50px;
+  justify-content: space-around;
 }
 .main .left .cover {
   height: 350px;
@@ -77,6 +78,29 @@ body {
 .main .left .buttons .button img {
   height: 30px;
   width: 30px;
+}
+.main .right {
+  width: 500px;
+}
+.main .right .title {
+  font-size: 30px;
+}
+.main .right .singer {
+  margin: 10px 0 0 10px;
+}
+.main .right .lyric {
+  height: 400px;
+  overflow-y: scroll;
+  margin-top: 20px;
+}
+.main .right .lyric .blank {
+  height: 200px;
+}
+.main .right .lyric .current {
+  font-size: 30px;
+}
+.main .right .lyric .active {
+  font-weight: bold;
 }
 
 .bottom {
@@ -154,4 +178,12 @@ body {
 
 .player {
   display: none;
+}
+
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar:hover {
+  background: rgba(0, 0, 0, 0);
 }/*# sourceMappingURL=index.css.map */
